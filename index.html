@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
+     rel="stylesheet" 
+     href="./css/styles.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,7 +18,10 @@
     <title>Interno</title>
   </head>
   <body>
+    <!-- Header -->
     <header>
+      <div class="container">
+         <a href="a"><img src="./images/logo.svg" alt="logo"/></a>
       <nav>
         <ul>
           <li class="hero-list-item"><a href="#">Home</a></li>
@@ -28,6 +31,7 @@
           <li class="hero-list-item"><a href="#">Contact Us</a></li>
         </ul>
       </nav>
+      </div>
     </header>
     <main>
       <!-- Hero -->
@@ -80,10 +84,15 @@
             into greater opportunities. We have an insatiable curiosity about
             transformative trends challenging the status.
           </p>
-          <div class="designs-contacts">
-            <img src="./images/phone.png" alt="" />
-            <p>012345678</p>
-            <p>Call Us Anytime</p>
+          
+        
+            <a class="designs-phone-button" href="tel:012345678"><img src="./images/phone.png" alt="phone logo" /></a>
+        
+            <p class="design-number">012345678</p>
+            <p class="design-text-number">Call Us Anytime</p>
+            <button class="designs-button" type="button">Get Free Estimate</button>
+            <img srs=" "alt="flat-design"/>
+        </section>
           </div>
           <button type="button" class="designs-button"></button>
         </div>
@@ -91,7 +100,75 @@
           <img src="./images/design.png" alt="Design" />
         </div>
       </section>
-    </main>
-    <footer></footer>
+      <!-- Response-section -->
+      <div class="container">
+        <section class="response-section">
+          <h2 class="response-section-subtitle">
+            What the People Thinks About Interno
+          </h2>
+          <ul class="response-list"></ul>
+        </section>
+      </div>
+
+      <!-- Contact -section -->
+      <div class="container">
+        <section class="contact-section">
+          <h2 class="contact-subtitle">
+            Wanna join the interno?
+          </h2>
+          <p class="contact-text">Contact Us & Get a Free Consultation</p>
+          <button type="button" class="contact-button">Connect With us</button>
+        </section>
+      </div>
+      
+    </main> 
+       <!-- Footer -->
+      <div class="container">
+        <footer class="footer-section">
+          <div class="footer-logo">
+             <a href="#"><img src="./images/logo.svg" alt="logo"/></a>
+             <p class="footer-logo-text">We are the leading architect and interior design firm in the world.</p>
+             <ul class="footer-logo-social-list">
+              <li class="footer-logo-social-item"><a href="#"><img src="./images/social-links/fb.svg" alt="fb"></a></li>
+              <li class="footer-logo-social-item"><a href="#"><img src="./images/social-links/twitter.svg" alt="twitter"></a></li>
+              <li class="footer-logo-social-item"><a href="#"><img src="./images/social-links/li.svg" alt="li"></a></li>
+              <li class="footer-logo-social-item"><a href="#"><img src="./images/social-links/inst.svg" alt="instagram"></a></li>
+             </ul>
+          </div>
+          <div class="footer-pages">
+            <h3 class="footer-subtitle">Pages</h3>
+            <ul class="footer-list">
+              <li class="footer-item"><a href="#" target="_blank">Style Guide</a></li>
+              <li class="footer-item"><a href="#" target="_blank">Protected</a></li>
+              <li class="footer-item"><a href="#" target="_blank">Licenses</a></li>
+              <li class="footer-item"><a href="#" target="_blank">Changelog</a></li>
+              <li class="footer-item"><a href="#" target="_blank">404</a></li>
+            </ul>
+          </div>
+          <div class="footer-explore">
+            <h3 class="footer-subtitle">Explore</h3>
+            <ul class="footer-list">
+              <li class="footer-item"><a href="#" target="_blank">About Us</a></li>
+              <li class="footer-item"><a href="#" target="_blank">Recent Blog</a></li>
+              <li class="footer-item"><a href="#" target="_blank">Pricing Plan</a></li>
+              <li class="footer-item"><a href="#" target="_blank">Our Projects</a></li>
+              <li class="footer-item"><a href="#" target="_blank">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h3 class="footer-subtitle">Contact</h3>
+            <ul class="footer-list">
+              <li class="footer-item"><a href="https://goo.gl/maps/CHp9yY3rRHg1W6G68" target="_blank">53, East Birchwood Ave. Brooklyn, New York 11201, USA.</a></li>
+              <li class="footer-item"><a href="mailto:contact@interno.com" target="_blank">contact@interno.com</a></li>
+              <li class="footer-item"><a href="tel:1234567890" target="_blank">(123) 456 - 7890</a></li>
+            </ul>
+          </div>
+
+        </footer>
+      </div>
+      <footer class="footer-copyright">
+        <p class="footer-copyright-text">Copyright &#169; Interno | Designed by <span class="footer-copyright-text-span">Victorflow</span> Templates - Powered by <span class="footer-copyright-text-span">Webflow</span>
+</p>
+      </footer>
   </body>
 </html>
