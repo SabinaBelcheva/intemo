@@ -5,6 +5,8 @@ body {
   font-size: 22px;
 }
 
+/* Tags Html */
+
 h1,
 h2,
 h3,
@@ -36,6 +38,77 @@ img {
   padding: 0 120px;
 }
 
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  margin-top: 26px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  margin-top: 26px;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-list-item {
+  line-height: 1.58;
+  letter-spacing: 0.4px;
+  color: #292f36;
+  font-size: 19px;
+}
+
+.header-list-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.header-list-item:hover {
+  color: #cda274;
+}
+
+/* Main */
+
+/* Hero */
+
+.hero-section {
+  height: 831px;
+  max-width: 100%;
+  background-image: url(../images/hero-photo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0px 0px 0px 290px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-title {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.22px;
+  color: #292f36;
+  font-size: 80px;
+  margin-bottom: 19px;
+}
+
+.hero-text {
+  line-height: 1.5;
+  letter-spacing: 0.22px;
+  color: #4d5053;
+  font-size: 22px;
+  margin-bottom: 35px;
+}
+
 .hero-button {
   max-width: 207px;
   height: 71px;
@@ -43,11 +116,14 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 80px;
+  border: 2px solid #292f36;
+  border-radius: 18px;
+  padding: 22px 67px 22px 34px;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.72px;
+  color: white;
+  cursor: pointer;
 }
 
 /* Features */
@@ -111,10 +187,19 @@ img {
   margin-left: 6px;
 }
 
-/* Desings */
+/* Desings section */
 
 .designs-section {
+  margin-bottom: 140px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.designs-section-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .designs-title {
@@ -124,6 +209,7 @@ img {
   line-height: 65px;
   letter-spacing: 0.22px;
   color: #292f36;
+  margin-bottom: 42px;
 }
 
 .designs-text {
@@ -133,22 +219,315 @@ img {
   line-height: 33px;
   letter-spacing: 0.22px;
   color: #4d5053;
+  margin-bottom: 30px;
 }
 
-.designs-contacts {
+.designs-contact {
+  display: flex;
+  align-items: center;
 }
+
+.designs-phone-button {
+  margin-right: 20px;
+}
+
+.desingns-contact-info {
+  /* display: flex;
+  align-items: center; */
+}
+
+.designs-number {
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.22px;
+}
+
+.design-text-number {
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0.22px;
+}
+
 .designs-button {
+  margin-top: 50px;
+  width: 263px;
+  height: 71px;
+  background-image: url(../images/button.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 2px solid #292f36;
+  border-radius: 18px;
+  padding: 22px 67px 22px 34px;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.72px;
+  color: white;
+  font-weight: 400;
+  cursor: pointer;
 }
 
 /* People section */
 
+.people-section {
+  height: 675px;
+  background: #f4f0ec;
+  border-radius: 70px;
+  margin-bottom: 140px;
+}
+
+.people-section-subtitle {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 58px;
+  text-align: center;
+  letter-spacing: 0.22px;
+  color: #292f36;
+  padding-top: 103px;
+  margin-bottom: 45px;
+}
+
+.people-list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 121px;
+}
+
+.people-list-item {
+  height: 287px;
+  background: #ffffff;
+  border-radius: 30px;
+  width: 354px;
+}
+
+.people-list-item:not(:last-child) {
+  margin-right: 17px;
+}
+
+.people-user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-left: 35px;
+  padding-top: 50px;
+}
+
+.people-user-info {
+  margin-left: 20px;
+}
+
+.people-list-title {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 38px;
+  letter-spacing: 0.22px;
+  color: #292f36;
+}
+
+.people-list-paragraph {
+  font-size: 22px;
+}
+
+.people-list-text {
+  width: 310px;
+  height: 90px;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.22px;
+  padding-left: 35px;
+}
+
 /* Brand section */
+
+.brands-section {
+  margin-bottom: 100px;
+}
+
+.brands-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 /* Recent Project section */
 
+.project-section {
+  margin-bottom: 80px;
+}
+
+.project-subtitle {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 47px;
+  line-height: 62px;
+  text-align: center;
+  letter-spacing: 0.22px;
+  color: #292f36;
+  margin-bottom: 20px;
+}
+
+.project-text {
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.22px;
+  margin-bottom: 70px;
+}
+
+.project-item-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px 20px;
+}
+
+.project-list-item {
+  flex-basis: calc((100% - 20px) / 2);
+}
+
+.project-item-image {
+  width: 590px;
+  height: 661px;
+  margin-bottom: 24px;
+}
+
+.project-item-title {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: 0.22px;
+  color: #292f36;
+}
+
+.project-item-text {
+  line-height: 33px;
+  letter-spacing: 0.22px;
+}
+
+.project-item-icon {
+  width: 70px;
+  height: 70px;
+}
+
 /* Counts section */
 
+.counts-section {
+  height: 475px;
+  margin-bottom: 130px;
+  background-color: #f4f0ec;
+  padding: 140px 0;
+}
+
+.counts-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.counts-list-item {
+  width: 288px;
+  height: 195px;
+  margin-right: 16px;
+}
+
+.counts-list-item:not(:last-child) {
+  border-right: 1px solid #cda274;
+}
+
+.counts-number {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 85px;
+  line-height: 128px;
+  text-align: center;
+  letter-spacing: 1.7px;
+  color: #cda274;
+  margin-bottom: 10px;
+}
+
+.counts-list-text {
+  text-align: center;
+}
+
 /* Recent Blogs section */
+
+.blogs-section {
+  margin-bottom: 100px;
+}
+
+.blogs-subtitle {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 62px;
+  text-align: center;
+  letter-spacing: 0.22px;
+  color: #292f36;
+  margin-bottom: 21px;
+}
+
+.blogs-text {
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.22px;
+  margin-bottom: 70px;
+}
+
+.blogs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 17px;
+}
+
+.blogs-list-item {
+  border: 1px solid #e7e7e7;
+  border-radius: 62px;
+}
+
+.blogs-content {
+  padding: 21px 20px 40px 20px;
+}
+
+.blogs-image {
+  margin-bottom: 15px;
+}
+
+.blogs-item-title {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 35px;
+  letter-spacing: 0.5px;
+  color: #292f36;
+  margin-bottom: 10px;
+}
+
+.blogs-item-text {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.22px;
+}
+
+.blogs-icon {
+  width: 52px;
+  height: 52px;
+}
+
+.blogs-item-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 /* Contact Us section  */
 
