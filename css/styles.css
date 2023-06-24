@@ -501,6 +501,28 @@ img {
   margin-bottom: 15px;
 }
 
+.blogs-thumb {
+  position: relative;
+}
+
+.blogs-btn {
+  position: absolute;
+  bottom: 30px;
+  left: 25px;
+  width: 125px;
+  height: 44px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  background: #ffffff;
+  border-radius: 8px 8px 8px 0px;
+  letter-spacing: 0.22px;
+  border: none;
+  color: #4d5053;
+}
+
 .blogs-item-title {
   font-family: "DM Serif Display";
   font-style: normal;
